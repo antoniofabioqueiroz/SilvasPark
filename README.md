@@ -4,10 +4,10 @@ About
 -----
 This project is a template for help my pupils from SENAC Institute to build your own project Html5, CSS, JS, PHP and MySql.
 
-Instalação
+How to Install
 ------------
 
-Criar a tabela no Banco de dados:
+Create Table on DataBase:
 
 ```sql
 create table usuario(
@@ -19,12 +19,12 @@ create table usuario(
 )
 ```
 
-Configurar o arquivo Conexao.php dentro da pasta 'app/conexao': <br>
+Config connect DB file Conexao.php atfolder 'app/conexao': <br>
 
-Adicione o codigo abaixo dentro da função getConexão(), caso seu banco seja Mysql ja está como padrão.<br>
-Lembre-se de alterar os dados(dbname,user,password) na conexão de acordo com seu banco.
+Add the code bellow inside function getConexão(), case your DataBase are Mysql do nothing.<br>
+Remenber alter put your DB, user and passwd data into conexao.php file to connect on Data Base Manager .
 
--Conexão para MySql
+-For MySql
 ```php
  if (!isset(self::$instance)) {
            self::$instance = new PDO('mysql:host=localhost;dbname=github', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
@@ -34,7 +34,7 @@ Lembre-se de alterar os dados(dbname,user,password) na conexão de acordo com se
 
        return self::$instance;
 ```
--Conexão para PostgreSql
+-For PostgreSql
 
 ```php
         $host = 'localhost;port=5432';
