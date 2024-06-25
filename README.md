@@ -19,7 +19,7 @@ create table usuario(
 )
 ```
 
-Config connect DB file Conexao.php atfolder 'app/conexao': <br>
+Config connect DB file Conexao.php at folder 'app/conexao': <br>
 
 Add the code bellow inside function getConexão(), case your DataBase are Mysql do nothing.<br>
 Remenber alter put your DB, user and passwd data into conexao.php file to connect on Data Base Manager .
