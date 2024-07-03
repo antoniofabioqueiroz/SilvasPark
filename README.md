@@ -4,8 +4,8 @@ About
 -----
 This project is a template for help my pupils from SENAC Institute to build your own project Html5, CSS, JS, PHP and MySql.
 
-How to Install
-------------
+How to Install @Mysql Database
+------------------------------
 
 Create Table on DataBase:
 
@@ -21,3 +21,12 @@ $servername = "localhost";
 $username = "root";
 $password = "";
 ```
+How to Host @Apache for PHP
+---------------------------
+
+Only paste SILVASPARK folder inside your htdocs folder from your Apache server
+
+Done, you are ready to use your Park management App.
+
+Credits: Fábio Queiroz
+
