@@ -10,47 +10,14 @@ How to Install
 Create Table on DataBase:
 
 ```sql
-create table usuario(
-    id integer primary key AUTO_INCREMENT,
-    nome varchar(200) not null,
-    sobrenome varchar(300) not null,
-    idade integer not null,
-    sexo char(1) not null
-)
+IMPORT ./SILVASPARK/php/BKP_DB/tb_usuarios.sql on Mysql
+inside contain a CREATE TABLE CMD and some records for fum :]
 ```
+Config connect DB file conexao.php at folder './SILVASPARK/php/': <br>
 
-Config connect DB file Conexao.php at folder 'app/conexao': <br>
-
-Add the code bellow inside function getConexão(), case your DataBase are Mysql do nothing.<br>
-Remenber alter put your DB, user and passwd data into conexao.php file to connect on Data Base Manager .
-
--For MySql
-```php
- if (!isset(self::$instance)) {
-           self::$instance = new PDO('mysql:host=localhost;dbname=github', 'root', '', array(PDO::MYSQL_ATTR_INIT_COMMAND => "SET NAMES utf8"));
-           self::$instance->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
-           self::$instance->setAttribute(PDO::ATTR_ORACLE_NULLS, PDO::NULL_EMPTY_STRING);
-       }
-
-       return self::$instance;
+Add the code bellow inside change follow variables:
 ```
--For PostgreSql
-
-```php
-        $host = 'localhost;port=5432';
-        $dbname = 'github';
-        $user = 'root';
-        $pass = '';
-        try {
-      
-            if (!isset(self::$instance)) {
-                self::$instance = new \PDO('pgsql:host='.$host.';dbname=' . $dbname . ';options=\'--client_encoding=UTF8\'', $user, $pass);
-                self::$instance->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
-                self::$instance->setAttribute(\PDO::ATTR_ORACLE_NULLS, \PDO::NULL_EMPTY_STRING);
-            }
-
-            return self::$instance;
-        } catch (Exception $ex) {
-            echo $ex.'<br>';
-        }
+$servername = "localhost";
+$username = "root";
+$password = "";
 ```
