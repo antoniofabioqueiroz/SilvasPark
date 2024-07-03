@@ -15,7 +15,7 @@ inside contain a CREATE TABLE CMD and some records for fum :]
 ```
 Config connect DB file conexao.php at folder './SILVASPARK/php/': <br>
 
-Add the code bellow inside change follow variables:
+Change the code bellow inside to your connectivity data:
 ```
 $servername = "localhost";
 $username = "root";
