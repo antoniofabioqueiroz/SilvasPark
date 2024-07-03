@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../assets/css/estilo.css">
+    <link href='https://fonts.googleapis.com/css?family=Poppins' rel='stylesheet'>
+    <script src="../../assets/js/jscript.js"></script>
+    <title> Cadastro de usuário </title>
+</head>
+<body>
+    <br>
+    <br>
+    <br>
+<div class="container">
+    <div class="cabeca_container"><H2> Cadastro de usuário </H2></div>
+    <fieldset>
+        <form action="../../php/cad_usuario.php" method="post">
+            <br>
+            <label>Nome Completo:<br>  <input name="nome_comp" id="nome_comp" type="text" placeholder="Nome Completo" required></label>
+            <label>Nome de usuário:<br>  <input name="nome_usu" type="text" placeholder="Nome de usuário" required></label>
+            <label>Email:<br>  <input name="email" type="email" placeholder="Email" required></label>
+            <label>Senha:<br>  <input name="senha" type="password" placeholder="Senha" required></label>
+            <div class="botoes">
+                <br>
+                <button id="botao" type="submit">Enviar</button>
+                <button id="botao" type="reset">Limpar</button>
+                <br>
+                <br>
+            </div>
+        </form>
+    </fieldset>
+</div>   
+</body>
+</html>
