@@ -9,7 +9,7 @@ How to Install @Mysql Database
 
 <b>step 1)</b> Create a DataBase called <b>silvaspark</b>:
 
-<b>step 2) Create Table e import some records</b>
+<b>step 2)</b> Create Table e import some records</b>
 ```sql
 IMPORT ./SILVASPARK/php/BKP_DB/tb_usuarios.sql on Mysql
 inside contain a CREATE TABLE CMD and some records for fum :]
