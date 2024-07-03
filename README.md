@@ -7,7 +7,7 @@ This project is a template for help my pupils from SENAC Institute to build your
 How to Install @Mysql Database
 ------------------------------
 
-Create Table on DataBase:
+Create a DataBase called <b>silvaspark</b>:
 
 ```sql
 IMPORT ./SILVASPARK/php/BKP_DB/tb_usuarios.sql on Mysql
